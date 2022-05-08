@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 5px;
+    /* background: url(/img/kosmos-zvezdy-sozvezdiya-3465.jpg) no-repeat; */
+    background: url(/img/vid-iz-kosmosa-na-solnechnoe-zatmenie-planeta-zemlya.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+
+.container {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.container .slider {
+    width: 40%;
+}
+
+.container .descript {
+    font-family: 'Space Mono', monospace;
+    width: 60%;
+    padding: 5px;
+    position: absolute;
+    display: block;
+    top: 5px;
+    right: 5px;
+}
+
+.container .descript td {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+}
+
+.container .descript a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container .descript a:hover {
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 1 */
+
+.btnBlock {
+    text-align: center;
+    max-width: 40%;
+}
+
+.btnBlock button {
+    background: none;
+    border: 0;
+}
+
+.slider-next::after {
+    content: '\f101';
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    background-color: none;
+    color: #b7fae4fd;
+    font-size: 40px;
+}
+
+.slider-prev::after {
+    content: '\f100';
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    background-color: none;
+    color: #b7fae4fd;
+    font-size: 40px;
+}
+
+.slider {
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.slider-line {
+    display: flex;
+    transition: all ease 1s;
+}
+
+@media (max-width: 800px) and (min-width: 480px) {
+
+    .container .descript,
+    .container .slider {
+        width: 100%;
+        position: relative;
+    }
+
+    .slider-prev::after,
+    .slider-next::after {
+        font-size: 50px;
+    }
+
+    .btnBlock {
+        max-width: 100%;
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 480px) and (min-width: 240px) {
+
+    .container .descript,
+    .container .slider {
+        width: 100%;
+        position: relative;
+    }
+
+    .btnBlock {
+        max-width: 100%;
+        text-align: center;
+
+    }
+}
