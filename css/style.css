@@ -6,8 +6,8 @@
 body {
     padding: 0;
     margin: 5px;
-    /* background: url(/img/kosmos-zvezdy-sozvezdiya-3465.jpg) no-repeat; */
-    background: url(/img/vid-iz-kosmosa-na-solnechnoe-zatmenie-planeta-zemlya.jpg) no-repeat;
+    
+    background: url(../img/vid-iz-kosmosa-na-solnechnoe-zatmenie-planeta-zemlya.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
